@@ -7,13 +7,16 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   margin: 0; /* Remove default margins */
+  min-width:500px;
 }
 
 .container {
   /* Remove absolute positioning */
-  width: 99%; /* Occupy most of the screen width */
-  max-width: 500px; /* Set a maximum width */
+  width: 100%; /* Occupy most of the screen width */
   margin: 15px auto; /* Center with margins */
+
+ 
+  
 }
 
 form {
@@ -26,6 +29,9 @@ form {
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: all 0.2s ease-in-out;
+  min-width:400px;
+  margin:5%;
+  min-height:350px;
 }
 
 form p {
@@ -56,29 +62,6 @@ form input {
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
-
-.drops {
-  display: none; 
-}
-
-
-@media (max-width: 500px) {
-  form {
-    padding: 1em; 
-  }
-
-  form p {
-    font-size: 0.8rem;
-  }
-
-  form input {
-    font-size: 0.9rem; 
-  }
-
-  .drops {
-    display: none; 
-  }
-}
 .title-container {
   display: flex; 
   align-items: center; 
@@ -93,7 +76,5 @@ form input {
 }
 
 .title {
-  
- 
   margin: 0; 
 }
